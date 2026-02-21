@@ -4,13 +4,10 @@
     <title>Jurnal Masakan Rindi</title>
     <style>
         body {
-            
             background-image: url('wallpaper dapur.jpg'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            
-        
             font-family: 'Georgia', serif; 
             color: #4B2E1E;
             margin: 50px;
@@ -28,8 +25,10 @@
             padding: 15px;
             border-radius: 10px;
             display: inline-block;
+            margin-bottom: 20px; /* Kasih jarak bawah buat paragraf */
         }
 
+        /* Edit bagian ini saja biar tombolnya rapi */
         a {
             color: white;
             background-color: #D2691E;
@@ -37,16 +36,13 @@
             text-decoration: none;
             border-radius: 20px;
             font-weight: bold;
+            display: inline-block; /* WAJIB ada ini biar gak tumpuk */
+            margin-top: 10px;      /* Jarak antar tombol */
         }
-        ul {
-        list-style-type: none;
-        padding: 0;
-    }
 
-    li {
-        margin-bottom: 100px; 
-    }
-
+        a:hover {
+            background-color: #8B4513;
+        }
     </style>
 </head>
 <body>
@@ -57,11 +53,9 @@
     <h3>Menu Navigasi:</h3>
     
     <a href="about.html">Tentang Aku</a>
-    <br><br> 
-    
+    <br>
     <a href="portofolio.html">Koleksi Masakan</a>
-    <br><br>
-    
+    <br>
     <a href="contact.html">Hubungi Aku</a>
 </body>
 </html>
