@@ -11,6 +11,55 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: #8B4513; /* Warna cokelat kayu sesuai foto */
+            margin-top: 50px;
+            font-size: 35px;
+        }
+
+        .intro-box {
+            background-color: white;
+            border: 1px solid #D2691E;
+            border-radius: 15px;
+            padding: 10px 30px;
+            margin: 20px 0;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid #D2691E;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #2D6A4F;
+            margin-bottom: 20px;
+        }
+
+        .nav-container a {
+            display: block;
+            background-color: #D2691E; /* Warna orange tombol sesuai foto */
+            color: white;
+            padding: 10px 40px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .nav-container a:hover {
+            background-color: #A0522D;
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -18,17 +67,17 @@
 
     <h1>Selamat Datang di Jurnal Masakan Rindi 🌿</h1>
     
-    <p>Halo! Aku Rindi. Di sini aku bakal share kuliner yang aku masak.</p>
+    <div class="intro-box">
+        <p>Halo! Aku Rindi. Di sini aku bakal share kuliner yang aku masak.</p>
+    </div>
     
     <hr>
     
-    <h3 style="font-family: 'Comic Sans MS', cursive; color: #2D6A4F;">Menu Navigasi:</h3>
+    <h3>Menu Navigasi:</h3>
     
     <div class="nav-container">
         <a href="about.html">Tentang Aku</a>
-        <br>
         <a href="portofolio.html">Koleksi Masakan</a>
-        <br>
         <a href="contact.html">Hubungi Aku</a>
     </div>
 
