@@ -2,59 +2,91 @@
 <html>
 <head>
     <title>Kontak Rindi</title>
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    
     <style>
         body {
-            background: url('wp kontak.jpg') no-repeat center center fixed;
+            background-image: url('Assets/Image/wp kontak.jpg');
             background-size: cover;
-            font-family: 'Comic Sans MS', cursive; 
-            color: #1B4332;
-            text-align: center;
-            padding: 50px;
+            background-position: center;
+            background-attachment: fixed;
             margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box-kontak {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 25px;
+            border: 4px solid #D2691E;
+            width: 85%;
+            max-width: 380px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #8B4513;
+            margin-bottom: 10px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        /* Override p biar gak berantakan */
+        .box-kontak p {
+            font-size: 15px !important;
+            color: #4B2E1E !important;
+            background: none !important;
+            border: none !important;
+            padding: 0 !important;
+            margin-bottom: 20px !important;
+            display: block !important;
+        }
+
+        .info-wrapper {
+            margin-top: 20px;
+        }
+
+        .info-item {
+            background: #fff9f5;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 15px;
+            border: 1px solid #D2691E;
+            font-size: 14px;
+            font-weight: bold;
+            color: #4B2E1E;
+            display: block;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .info-item:hover {
+            background: #fdf0e6;
+            transform: translateY(-3px);
+        }
+
+        .emot-bawah {
+            font-size: 35px;
+            margin-top: 15px;
+            display: block;
         }
 
         .btn-back {
             position: absolute;
             top: 20px;
             left: 20px;
-            background: #2D6A4F;
+            z-index: 100;
+            background: #D2691E;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: bold;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .box {
-            background: #ffffff; 
-            padding: 30px;
-            border-radius: 25px;
-            display: inline-block;
-            margin-top: 80px;
-            border: 4px solid #74C69D;
-            width: 350px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        h1 { font-size: 26px; color: #2D6A4F; }
-
-        .info-kontak {
-            background: #f0fff4;
-            margin: 15px 0;
-            padding: 12px;
+            padding: 10px 15px;
             border-radius: 15px;
-            border: 1px solid #B7E4C7;
-            font-weight: bold;
-        }
-
-        a.insta { color: #1B4332; text-decoration: none; }
-        
-        /* Gaya Emot Besar */
-        .emot-besar {
-            font-size: 45px;
-            margin-top: 15px;
-            display: block;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -62,14 +94,21 @@
 
     <a href="index.html" class="btn-back">⬅ Beranda</a>
 
-    <div class="box">
-        <h1>Hubungi Aku Yuk! 🌿</h1>
-        <p>Tanya resep atau sekadar ngobrol? <br> Bisa lewat sini ya:</p>
+    <div class="box-kontak">
+        <h1>Hubungi Rindi 🌿</h1>
+        <p>Mau tanya resep atau order masakan?<br>Klik di bawah ini ya:</p>
         
-        <div class="info-kontak">📧 antikrindi004@gmail.com</div>
-        <div class="info-kontak">📸 <a href="https://instagram.com/rqu_mala" class="insta">@rqu_mala</a></div>
-        
-        <span class="emot-besar">✨👩‍🍳✨</span>
+        <div class="info-wrapper">
+            <div class="info-item">
+                📧 antikrindi004@gmail.com
+            </div>
+            
+            <a href="https://instagram.com/rqu_mala" target="_blank" class="info-item">
+                📸 Instagram: @rqu_mala
+            </a>
+        </div>
+
+        <span class="emot-bawah">✨👩‍🍳✨</span>
     </div>
 
 </body>
