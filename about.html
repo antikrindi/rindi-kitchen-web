@@ -8,6 +8,29 @@
             background-image: url('Assets/Image/wp saya.jpg');
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;
+            /* Tambahan biar tengah sempurna */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Biar isinya berjejer ke bawah */
+            align-items: center;    /* Tengah secara horizontal */
+            justify-content: center; /* Tengah secara vertikal */
+            min-height: 100vh;      /* Minimal setinggi layar */
+            padding: 50px 20px;     /* Kasih ruang biar gak mepet HP */
+        }
+
+        /* Biar box profil dan kucing gak terlalu dempet */
+        .box, .kucing-section {
+            width: 100%;
+            max-width: 400px; /* Supaya gak kelebaran di laptop */
+            margin-bottom: 20px;
+        }
+
+        /* Biar teks deskripsi kucing nggak ada background putih lebar */
+        .kucing-section p {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -20,11 +43,11 @@
         <h2 class="lucu">Rindi ✨</h2>
         <p>🎂 <b>Umur:</b> 20 Thn</p>
         <p>🎨 <b>Hobby:</b> Memasak</p>
-        <p>🌟 <b>Cita-cita:</b> Punya banyak MONEY... heheheh</p>
+        <p>🌟 <b>Cita-cita:</b> Punya banyak MONEY... <br><i>(Aamiinn yang kenceng! Hehehe)</i></p>
     </div>
 
-    <div class="kucing-section" style="margin-top: 30px;">
-        <h3 class="lucu">Pawpillo🐾</h3>
+    <div class="kucing-section">
+        <h3 class="lucu">Pawpillo 🐾</h3>
         <img src="Assets/Image/PAWPILLO.jpeg" class="kucing-img">
         <p class="lucu"><b>"Anak bulu kesayangan dan Si Ganteng kyuuu" 🐱💖</b></p>
     </div>
