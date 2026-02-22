@@ -2,110 +2,87 @@
 <html>
 <head>
     <title>Koleksi Masakan Rindi</title>
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    
     <style>
+        /* 2. Wallpaper khusus halaman ini */
         body {
-            background-image: url('wp masakan.jpg'); 
+            background-image: url('Assets/Image/wp masakan.jpg'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            color: #f0f0f0; 
-            margin: 50px;
         }
 
-        h1 {
-            color: #FFD700; 
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-            font-size: 35px;
-        }
-
-        .btn-back {
-            color: #1a1a1a;
-            background-color: #ffffff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 30px;
-            transition: 0.3s;
-        }
-
-        .btn-back:hover {
-            background-color: #D4AF37;
-            color: white;
+        /* 3. Penyesuaian khusus agar gambar makanan rapi */
+        .makanan-box {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h2 {
-            display: table;
-            background: linear-gradient(45deg, #D4AF37, #FFD700);
-            color: #1a1a1a;
-            padding: 12px 25px;
-            border-radius: 10px 30px 10px 30px;
+            background: #D2691E;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
             font-family: 'Comic Sans MS', cursive;
-            font-size: 22px;
-            box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.4);
-            margin-top: 40px;
+            display: inline-block;
+            margin-top: 30px;
         }
 
-
-        img {
-            border: 5px solid #ffffff;
+        .img-makanan {
+            border: 6px solid white;
             border-radius: 20px;
-            margin-top: 15px;
-            box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
             transition: 0.4s;
+            margin: 15px 0;
         }
 
-        img:hover {
-            transform: scale(1.02); 
+        .img-makanan:hover {
+            transform: scale(1.05);
         }
 
-       
-        .deskripsi {
-            font-size: 18px;
-            background-color: rgba(0, 0, 0, 0.7); 
-            color: #ffffff;
-            padding: 20px;
-            border-radius: 15px;
-            border-left: 6px solid #FFD700;
-            max-width: 600px;
-            margin-top: 15px;
-            line-height: 1.6;
-            font-style: italic;
-        }
     </style>
 </head>
 <body>
 
+    <a href="index.html" class="btn-back">⬅ Beranda</a>
+
     <h1>✨ Koleksi Masakan Rindi</h1>
-    <a href="index.html" class="btn-back">⬅ Kembali ke Beranda</a>
-    <hr style="border: 1px solid #D4AF37;">
+    <hr>
 
-    <h2>1. Martabak Mie Madura</h2>
-    <img src="Martabak Mie Madura.jpeg" alt="Martabak Mie" width="350">
-    <p class="deskripsi">
-        Martabak mie legendaris khas Madura dengan kulit yang garing dan isian mie yang gurih pol. Sekali gigit, bumbu rempahnya langsung bikin lidah bergoyang! 🌶️🥢
-    </p>
+    <div class="makanan-box">
+        <h2>1. Martabak Mie Madura</h2>
+        <img src="Assets/Image/Martabak Mie Madura.jpeg" class="img-makanan" width="350">
+        <p class="deskripsi">
+            Martabak mie legendaris khas Madura dengan kulit yang garing dan isian mie yang gurih pol. Sekali gigit, bumbu rempahnya langsung bikin lidah bergoyang! 🌶️🥢
+        </p>
+    </div>
 
-    <h2>2. Donat Magic</h2>
-    <img src="Donat Magic.jpeg" alt="Donat Magic" width="350">
-    <p class="deskripsi">
-        Donat yang empuknya kebangetan kayak awan! Taburan gulanya pas banget, beneran bikin hari-hari jadi penuh keajaiban di setiap gigitannya. 🍩☁️
-    </p>
+    <div class="makanan-box">
+        <h2>2. Donat Magic</h2>
+        <img src="Assets/Image/Donat Magic.jpeg" class="img-makanan" width="350">
+        <p class="deskripsi">
+            Donat yang empuknya kebangetan kayak awan! Taburan gulanya pas banget, beneran bikin hari-hari jadi penuh keajaiban di setiap gigitannya. 🍩☁️
+        </p>
+    </div>
 
-    <h2>3. Dimsum Homemade</h2>
-    <img src="Dimsum Homade.jpeg" alt="Dimsum Homemade" width="350">
-    <p class="deskripsi">
-        Cemilan sehat tapi tetep mewah. Dimsum ini full daging, super juicy, dan yang paling penting dibuat dengan penuh cinta di dapur sendiri tanpa pengawet! 🥟❤️
-    </p>
+    <div class="makanan-box">
+        <h2>3. Dimsum Homemade</h2>
+        <img src="Assets/Image/Dimsum Homade.jpeg" class="img-makanan" width="350">
+        <p class="deskripsi">
+            Cemilan sehat tapi tetep mewah. Dimsum ini full daging, super juicy, dan yang paling penting dibuat dengan penuh cinta di dapur sendiri! 🥟❤️
+        </p>
+    </div>
 
-    <h2>4. Korean Garlic Cheese Bread</h2>
-    <img src="Korean Garlic Cheese Bread.jpeg" alt="Garlic Bread" width="350">
-    <p class="deskripsi">
-        Roti viral yang aroma bawangnya menggoda banget! Perpaduan cream cheese yang melimpah dan butter garlic-nya beneran pecah banget di mulut. 🧄🧀
-    </p>
+    <div class="makanan-box">
+        <h2>4. Korean Garlic Cheese Bread</h2>
+        <img src="Assets/Image/Korean Garlic Cheese Bread.jpeg" class="img-makanan" width="350">
+        <p class="deskripsi">
+            Roti viral yang aroma bawangnya menggoda banget! Perpaduan cream cheese yang melimpah dan butter garlic-nya beneran pecah banget di mulut. 🧄🧀
+        </p>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,98 @@
+/* --- PUSAT DESAIN RINDI --- */
+
+body {
+    font-family: 'Georgia', serif; 
+    color: #4B2E1E; /* Warna cokelat tua */
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #8B4513; /* Cokelat Saddle */
+    font-family: 'Comic Sans MS', cursive;
+    text-shadow: 2px 2px 4px white;
+    font-size: 35px;
+}
+
+p {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid #D2691E;
+} 
+
+/* --- TOMBOL NAVIGASI (KOTAK COKELAT) --- */
+.nav-container {
+    margin-top: 20px;
+}
+
+a {
+    color: white;
+    background-color: #D2691E; /* Cokelat favoritmu */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 15px; 
+    font-weight: bold;
+    display: inline-block; 
+    margin: 10px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+} 
+
+a:hover {
+    background-color: #8B4513; 
+    transform: scale(1.1);
+}
+
+/* --- BOX PROFIL & KONTAK --- */
+.box {
+    background: #ffffff; 
+    padding: 30px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 4px solid #D2691E;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.profil-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #D2691E;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.kucing-img {
+    width: 85%;
+    max-width: 400px;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin-top: 15px;
+}
+
+/* --- TOMBOL BACK & LAINNYA --- */
+.btn-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #8B4513;
+}
+
+.lucu {
+    font-family: 'Comic Sans MS', cursive;
+    color: #8B4513;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #D2691E;
+    width: 60%;
+    margin: 30px auto;
+}
